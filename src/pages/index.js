@@ -1,16 +1,12 @@
 import * as React from "react"
 
-const IndexPage =() => {
-
-  return(
+const IndexPage = () => {
+  return (
     <main>
       <h1>FrameworkJS</h1>
     </main>
   )
-
-
 }
-
 
 
 
