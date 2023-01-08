@@ -1,16 +1,17 @@
 import * as React from "react"
 import { Link } from 'gatsby'
+import Layout from '../components/layout'
+
 const IndexPage = () => {
   return (
-    <main>
-      <h1>FrameworkJS</h1>
-      <Link to="/about">About</Link>
-    </main>
+    <Layout pageTitle="FrameworkJS">
+
+    </Layout>
   )
 }
 
 
 
 //export const Head = () => <Seo title="Home" />
-
+export const Head = () => <title>FrameworkJS</title>
 export default IndexPage
