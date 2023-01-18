@@ -16,10 +16,13 @@ import { container,
           navLinkText
              } from './layout.module.css'
 
+import Footer from '../pages/footer'
+import "./footer.css"
+
 const Layout = ({pageTitle, children}) => {
     return (
-
-        <div className={container}>
+        <React.Fragment>
+            <div className={container}>
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
@@ -33,8 +36,15 @@ const Layout = ({pageTitle, children}) => {
                 {children}
             </main>
         </div>
-    
+        <Footer>
+
+        </Footer>
+        </React.Fragment>
+        
+      
         )
 }
+
+
 
 export default Layout
