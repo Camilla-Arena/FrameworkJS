@@ -12,7 +12,10 @@ const AboutPage = () => {
         </main>*/
 
         <Layout pageTitle="About Me">
-            <p>Hi there! Io sono il creatore di questo sito, costruito con Gatsby</p>
+            <p>Hi there 👋👋👋! Io sono il creatore di questo sito👩‍🔬</p>
+            <p>Questo sito è nato da una domanda che mi è sorta durante gli studi di programmazione web, ovvero quanti librerie-framework di Javascript ci sono?</p>
+            <p>Esplorerò quelli più popolari e quelli che sono pochi diffusi (magari possono servire per qualche project side🚀)</p>
+            <p>Sarà anche un modo per approcciarmi all'utilizzo del framework Gasbty ( framework che permette di creare siti statici)</p>
         </Layout>
 
     )

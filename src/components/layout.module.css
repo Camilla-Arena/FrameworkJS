@@ -1,3 +1,11 @@
+body{
+  background-color: #2D3436;
+}
+
+p{
+  color:aliceblue;
+}
+
 .container {
     margin: auto;
     max-width: 500px;
@@ -6,4 +14,23 @@
 
   .heading{
     color: yellow;
+  }
+
+  .nav-links{
+    display:flex;
+    list-style: none;
+    /*padding-left: 0;*/
+    justify-content: flex-end;
+    
+  }
+
+  .nav-link-item{
+    padding-right: 2rem;
+    
+  }
+
+  .nav-link-text{
+    color: purple;
+    text-decoration: none;
+    padding-top: 10px;
   }

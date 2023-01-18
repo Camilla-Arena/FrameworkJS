@@ -9,16 +9,21 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from 'gatsby'
 import "./layout.css"
-import { container,heading } from './layout.module.css'
+import { container,
+          heading,
+          navLinks,
+          navLinkItem,
+          navLinkText
+             } from './layout.module.css'
 
 const Layout = ({pageTitle, children}) => {
     return (
 
         <div className={container}>
             <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                <ul className={navLinks}>
+                    <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
+                    <li className={navLinkItem}><Link to="/about" className={navLinkText}>About</Link></li>
                 </ul>
             </nav>
             <main>
