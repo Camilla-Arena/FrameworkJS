@@ -9,7 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from 'gatsby'
 import "./layout.css"
-import { container } from './layout.module.css'
+import { container,heading } from './layout.module.css'
 
 const Layout = ({pageTitle, children}) => {
     return (
@@ -22,7 +22,7 @@ const Layout = ({pageTitle, children}) => {
                 </ul>
             </nav>
             <main>
-                <h1>
+                <h1 className={heading}>
                     {pageTitle}
                 </h1>
                 {children}
