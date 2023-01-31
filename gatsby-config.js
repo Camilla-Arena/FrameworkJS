@@ -9,12 +9,24 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `FrameworkJs`,
+    description: `Sito realizzato per fconoscere i framework di Javascript`,
+    author: `Camilla Arena - manovale di codice`,
+    contact: `camilla.arena@hotmail.it`
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`cardsFramework`,
+        path: `${__dirname}/src/cardFramework`,
+      }
+    },
+    
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,4 +52,5 @@ module.exports = {
       },
     },
   ],
+ 
 }

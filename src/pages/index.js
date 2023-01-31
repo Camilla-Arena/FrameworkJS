@@ -9,12 +9,8 @@ const IndexPage = () => {
     <React.Fragment>
        <Layout pageTitle="FrameworkJS">
        <Card>
-
        </Card>
-      </Layout>
-
-     
-     
+      </Layout>   
     </React.Fragment>
    
   )
